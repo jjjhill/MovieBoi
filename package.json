@@ -1,0 +1,16 @@
+{
+  "name": "MovieBoi",
+  "version": "1.0.0",
+  "description": "Discord bot for selecting movies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Josh Hill",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "12.2.0",
+    "discord.js-poll-embed": "^1.0.2",
+    "dotenv": "^8.2.0"
+  }
+}
