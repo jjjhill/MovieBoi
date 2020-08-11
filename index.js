@@ -1,5 +1,6 @@
 require('dotenv').config();
 const Option = require('./option');
+const reset = require('./reset');
 const fs = require('fs');
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -57,6 +58,9 @@ client.on('message', async msg => {
         break
       case 'remove':
         removeFromList(args[0])
+        break
+      case 'reset':
+        reset()
         break
       default:
         msg.channel.send(`Unknown command.\n${commandsStr}`)
